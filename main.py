@@ -14,7 +14,6 @@ with open(toTranslateFile, "r", encoding="1252") as toTranslateFile:
 		if line != "" or line != "\n":
 			if key == None:
 				line = line.split('"')
-				print(line)
 				if len(line) >= 2:
 					key = line[1]
 			else:
@@ -23,18 +22,17 @@ with open(toTranslateFile, "r", encoding="1252") as toTranslateFile:
 
 with open(translationBaseFile, "r", encoding="1252") as translationBaseFile:
 	for line in translationBaseFile:
-		if line != "":
+		if line != "" or line != "\n":
 			if key == None:
 				line = line.split('"')
-				key = line[1]
+				if len(line) >= 2:
+					key = line[1]
 			else:
-				translationBase[key] = line[1:-3]
+				translationBase[key] = line
 				key = None
-
 
 for key in toTranslate:
 	if key in translationBase:
-		resultFile.write('"' + key + '"\n"' + translationBase[key] + '";\n\n')
+		resultFile.write(toTranslate[key] + translationBase[key] + '\n')
 	else:
-		otherFile.write('"' + key + '"\n"' + toTranslate[key] + '";\n\n')
-
+		otherFile.write('"' + key + '"\n' + toTranslate[key] + '\n')
