@@ -1,4 +1,4 @@
-# Metin2Work - LocaleStringTranslator
+LocaleStringTranslator
 
 With this system you can translate your locale_string.
 
@@ -26,7 +26,7 @@ USE "PAUSE" for the keep open the terminal.
 
 ## Authors
 
-* Takuma - [Metin2Work](https://github.com/devTakuma)
+* Takuma - [Mail](mailto:work.takuma@gmail.com) - Discord: Takuma#0075
 
 ## License
 
