@@ -26,7 +26,7 @@ USE "PAUSE" for the keep open the terminal.
 
 ## Authors
 
-* Takuma - [Mail](mailto:work.takuma@gmail.com) - Discord: Takuma#0075
+* Takuma - [Mail](mailto:work.takuma@gmail.com) - Discord: Takuma#2725
 
 ## License
 
